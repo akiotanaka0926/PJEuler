@@ -3,7 +3,7 @@ package jp.euler.problem0001;
 import jp.euler.common.AbstractEluer;
 
 /**
- * –â1
+ * å•1
  * 
  * @author Akio Tanaka
  */
@@ -19,13 +19,13 @@ public class Eluer0001 extends AbstractEluer {
 	}
 
 	/**
-	 * Šî’ê”‚ÌÅ‘å‚Ì©‘R”‚Ü‚Å‚Ì‘˜a‚ğŒvZ‚·‚é
+	 * åŸºåº•æ•°ã®æœ€å¤§ã®è‡ªç„¶æ•°ã¾ã§ã®ç·å’Œã‚’è¨ˆç®—ã™ã‚‹
 	 * 
 	 * @param num
-	 *            Šî’ê”
+	 *            åŸºåº•æ•°
 	 * @param maxNaturalNumber
-	 *            Å‘å‚Ì©‘R”
-	 * @return ‹K’è”‚ÌÅ‘å‚Ì©‘R”‚Ì‘˜a
+	 *            æœ€å¤§ã®è‡ªç„¶æ•°
+	 * @return è¦å®šæ•°ã®æœ€å¤§ã®è‡ªç„¶æ•°ã®ç·å’Œ
 	 */
 	private int multipleTotal(int num, int maxNaturalNumber) {
 		double divide = maxNaturalNumber / num;

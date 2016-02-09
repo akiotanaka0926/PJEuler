@@ -1,13 +1,13 @@
 package jp.euler.common;
 
 /**
- * ƒƒCƒ“ƒNƒ‰ƒX
+ * ãƒ¡ã‚¤ãƒ³ã‚¯ãƒ©ã‚¹
  * 
- * @author AQUA
+ * @author Akio Tanaka
  */
 public abstract class AbstractEluer {
 	/**
-	 * ŽÀsƒƒ\ƒbƒh
+	 * å®Ÿè¡Œãƒ¡ã‚½ãƒƒãƒ‰
 	 */
 	public void run() {
 		TimeMeasurement tm = new TimeMeasurement();
@@ -20,7 +20,7 @@ public abstract class AbstractEluer {
 	}
 
 	/**
-	 * ŽÀˆ——p’ŠÛƒƒ\ƒbƒh
+	 * å®Ÿå‡¦ç†ç”¨æŠ½è±¡ãƒ¡ã‚½ãƒƒãƒ‰
 	 */
 	protected abstract void internalRun();
 }

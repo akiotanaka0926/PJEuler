@@ -3,40 +3,40 @@ package jp.euler.common;
 import java.text.NumberFormat;
 
 /**
- * ŠÔŒv‘ªƒNƒ‰ƒX
+ * æ™‚é–“è¨ˆæ¸¬ã‚¯ãƒ©ã‚¹
  * 
- * @author AQUA
+ * @author Akio Tanaka
  */
 public class TimeMeasurement {
 
-	/** ŠJnŠÔiƒiƒm•bj */
+	/** é–‹å§‹æ™‚é–“ï¼ˆãƒŠãƒç§’ï¼‰ */
 	private double startNanoTime;
 
-	/** I—¹ŠÔiƒiƒm•bj */
+	/** çµ‚äº†æ™‚é–“ï¼ˆãƒŠãƒç§’ï¼‰ */
 	private double finishNanoTime;
 
-	/** •b•ÏŠ·—p */
+	/** ç§’å¤‰æ›ç”¨ */
 	private int SECOND_DIVIDE = 1000000000;
 
-	/** ƒ~ƒŠ•b•ÏŠ·—p */
+	/** ãƒŸãƒªç§’å¤‰æ›ç”¨ */
 	private int MILL_SECOND_DIVIDE = 1000000;
 
 	/**
-	 * ŠJnŠÔ‚ğİ’è‚·‚é
+	 * é–‹å§‹æ™‚é–“ã‚’è¨­å®šã™ã‚‹
 	 */
 	public void start() {
 		startNanoTime = System.nanoTime();
 	}
 
 	/**
-	 * I—¹ŠÔ‚ğİ’è‚·‚é
+	 * çµ‚äº†æ™‚é–“ã‚’è¨­å®šã™ã‚‹
 	 */
 	public void finish() {
 		finishNanoTime = System.nanoTime();
 	}
 
 	/**
-	 * ˆ—ŠÔ‚ğƒiƒm•bAƒ~ƒŠ•bA•b‚Å‚»‚ê‚¼‚ê•\¦‚·‚é
+	 * å‡¦ç†æ™‚é–“ã‚’ãƒŠãƒç§’ã€ãƒŸãƒªç§’ã€ç§’ã§ãã‚Œãã‚Œè¡¨ç¤ºã™ã‚‹
 	 */
 	public void resultPrint() {
 		double result = finishNanoTime - startNanoTime;
@@ -45,10 +45,10 @@ public class TimeMeasurement {
 		nf.setMinimumFractionDigits(0);
 
 		System.out.println();
-		System.out.println("==== Às‘¬“x ====");
+		System.out.println("==== å®Ÿè¡Œé€Ÿåº¦ ====");
 		System.out.println();
-		System.out.println(nf.format(result / SECOND_DIVIDE) + "    •b");
-		System.out.println(nf.format(result / MILL_SECOND_DIVIDE) + "  ƒ~ƒŠ•b");
-		System.out.println(nf.format(result) + "  ƒiƒm•b");
+		System.out.println(nf.format(result / SECOND_DIVIDE) + "    ç§’");
+		System.out.println(nf.format(result / MILL_SECOND_DIVIDE) + "  ãƒŸãƒªç§’");
+		System.out.println(nf.format(result) + "  ãƒŠãƒç§’");
 	}
 }
