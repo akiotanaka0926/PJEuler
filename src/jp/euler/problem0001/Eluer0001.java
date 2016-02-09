@@ -5,7 +5,7 @@ import jp.euler.common.AbstractEluer;
 /**
  * –â1
  * 
- * @author AQUA
+ * @author Akio Tanaka
  */
 public class Eluer0001 extends AbstractEluer {
 
